@@ -8,10 +8,10 @@ class Driver {
 		this.id = ++driverId;
 		this.name = name;
 		store.drivers.push(this);
-		
+
 	}
 
-	
+
 	trips() {
 		return store.trips.filter(
 			function(trip) {
@@ -34,7 +34,7 @@ class Passenger {
 	constructor(name) {
 		this.id = ++passengerId;
 		this.name = name;
-		
+
 
 		store.passengers.push(this);
 	}
@@ -73,7 +73,7 @@ class Trip {
       }.bind(this)
     );
   }
-  
+
   passenger() {
     return store.passengers.find(
       function(passenger) {
